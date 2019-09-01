@@ -11,6 +11,7 @@ class Post(models.Model):
     body = models.CharField(max_length=400)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    likes = models.ManyToManyField(User, related_name='like_posts')
 
     class Meta:
         ordering = ["-created_at"]
