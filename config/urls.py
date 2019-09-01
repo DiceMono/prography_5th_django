@@ -26,5 +26,6 @@ urlpatterns = [
     path('docs/', include_docs_urls(title='dicemono api')),
     path('api/doc/', schema_view),
     path('api/get_token/', obtain_auth_token),
-    path('accounts/', include('accounts.urls'))
+    path('accounts/', include('accounts.urls')),
+    path('board/', include('board.urls')),
 ]
