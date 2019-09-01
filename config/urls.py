@@ -15,7 +15,15 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from rest_framework_swagger.views import get_swagger_view
+from rest_framework.authtoken.views import obtain_auth_token
+from rest_framework.documentation import include_docs_urls
+
+schema_view = get_swagger_view(title='Prography API Doc')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('docs/', include_docs_urls(title='dicemono api')),
+    path('api/doc/', schema_view),
+    path('api/get_token/', obtain_auth_token),
 ]
