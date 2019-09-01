@@ -29,7 +29,7 @@ class CommentRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView)
 def like_or_dislike_post(request, pk):
     post = Post.objects.get(pk=pk)
     user = request.user
-    if user in post.likes.all():
+    if post.likes.filter(pk=user.pk).exists():
         post.likes.remove(user)
     else:
         post.likes.add(user)
