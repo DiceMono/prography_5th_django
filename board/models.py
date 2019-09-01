@@ -8,10 +8,10 @@ class Post(models.Model):
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='posts')
     image = models.ImageField(upload_to='post_image/%Y/%m/%d', null=True, blank=True)
     title = models.CharField(max_length=100)
-    body = models.CharField(max_length=400)
+    body = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    likes = models.ManyToManyField(User, related_name='like_posts')
+    likes = models.ManyToManyField(User, related_name='like_posts', blank=True)
 
     class Meta:
         ordering = ["-created_at"]
