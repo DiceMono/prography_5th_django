@@ -20,7 +20,7 @@
 
 #### 모델 관계도
 
-![my_project_want_model](https://s3.ap-northeast-2.amazonaws.com/prography.dicemono.xyz/my_project_want_model.png)
+![my_project_want_model](https://s3.ap-northeast-2.amazonaws.com/prography.dicemono.xyz/my_project_want_model2.png)
 
 #### 배포 
 
