@@ -35,7 +35,7 @@ username: admin
 
 password: 1234
 
-token: 7a2d198dec9f6784c5bb8d17b3d94e3ca7b348ec
+token: 73578e233f01b2386fea789c0466ddc77be16137
 
 ###### 일반 계정
 
@@ -43,10 +43,10 @@ username: apple
 
 password: 1234
 
-token: d2c05132952d9fdd056032d1202767b827cff429
+token: 7a1fa3a96f831e6dd640bbe9f650bde3c289530d
 
 username: banana
 
 password: 1234
 
-token: ed58dbe2bfc811009f00f21d0a877010e092012d
+token: 44d3592d270da1251e210fb9159387a90a8ed978
