@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from rest_framework_swagger.views import get_swagger_view
 from rest_framework.authtoken.views import obtain_auth_token
 from rest_framework.documentation import include_docs_urls
@@ -26,4 +26,5 @@ urlpatterns = [
     path('docs/', include_docs_urls(title='dicemono api')),
     path('api/doc/', schema_view),
     path('api/get_token/', obtain_auth_token),
+    path('accounts/', include('accounts.urls'))
 ]
